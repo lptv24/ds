@@ -2,7 +2,7 @@ name: itvlist
 
 on:
   schedule:
-    - cron: '0 9,21 * * *'
+    - cron: '0 21 * * *'
   push:
     branches:
       - main
@@ -34,7 +34,7 @@ jobs:
         
       #- name: Run qita
         #run: python ${{ github.workspace }}/qita.py
-        
+ 
       - name: 提交更改
         run: |
           git config --local user.email "lptv11204@gmail.com"
